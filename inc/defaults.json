@@ -1,0 +1,55 @@
+{
+	"app.name": "SmartPage Framework",
+	"app.version" : "1.0",
+	"app.description" : "The best and easyest way to create new websites, what is using cuting edge techologies.",
+	"app.logo" : "smartpage.png",
+	"views.bootswatch.api": "https://bootswatch.com/api/4.json",
+	"views.bootswatch.version": 4,
+	"views.bootswatch.theme": "lux",
+	"server.cache.images" : "storage/cache/images",
+	"server.cache.assets" : "storage/cache/assets",
+	"resources": {
+		"bootstrap" : {
+			"twitter_bs" : {
+				"enable" : true,
+				"minable" : true,
+				"async" : true,
+				"js" : ["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+								"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+								"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"],
+				"css" : ["https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+								"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
+			}
+		},
+		"plugins" : {
+			"nicescroll": {
+        "enable": true,
+        "minable": true,
+        "async": true,
+        "js": [
+          "https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.5/jquery.nicescroll.min.js"
+        ]
+      },
+      "sweetalert": {
+        "enable": true,
+        "minable": true,
+        "async": true,
+        "css": [
+          "https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.css"
+        ],
+        "js": [
+          "https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.js"
+        ]
+      }
+		},
+		"core": {
+      "csrf": {
+        "enable": true,
+        "minable": true,
+        "async": true,
+				"css" : ["dappur/css/custom.min.css"],
+        "js": ["dappur/js/csrf.min.js", "dappur/js/custom.min.js"]
+      }
+    }
+  }
+}

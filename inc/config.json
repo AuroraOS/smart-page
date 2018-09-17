@@ -1,0 +1,14 @@
+{
+	"tpl.root": "app/smartpage/views",
+	"tpl.macros" : "app/smartpage/views/macros",
+	"tpl.inc": "app/smartpage/views/inc",
+	"tpl.headers" : "app/smartpage/views/headers",
+	"tpl.footers" : "app/smartpage/views/footers",
+	"tpl.modules" : "app/smartpage/views/modules",
+	"assets.js" : "app/smartpage/assets/js",
+	"assets.css" : "app/smartpage/assets/css",
+	"assets.img" : "app/smartpage/assets/img",
+	"assets.fonts" : "app/smartpage/assets/fonts",
+	"uploads" : "public/uploads",
+	"app.img" : "app/smartpage/assets/app/img"
+}
