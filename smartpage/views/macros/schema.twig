@@ -1,0 +1,53 @@
+{% macro conf(schema) %}
+{% set width = "col-md-6" %}
+{% import _self as schema %}
+	<form class="container form-horizontal">
+	  <div class="card">
+			<div class="card-header">
+				<h4>Schema builded settings editor...</h4>
+			</div>
+			<div class="card-body">
+				<div class="row">
+			  	<div class="{{width}}">
+						{{schema.image('bg', 'image')}}
+						{{schema.image('img', 'image')}}
+			  	</div>
+					
+					<div class="{{width}}">
+						{{schema.string('title', 'string')}}
+						{{schema.image('subtitle', 'string')}}
+					</div>
+			  </div>
+			</div>
+			<div class="card-footer">
+				<div class="col-md-12 text-center">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+	  </div>
+	</form>
+{% endmacro %}
+
+{% macro image(name, type) %}
+<fieldset class="form-groups">
+	<label for="{{name}}Schema">{{name}}</label>
+	<input type="text" class="form-control" id="{{name}}Schema" placeholder="{{name}}">
+	<small class="text-muted">We'll never share your email with anyone else.</small>
+</fieldset>
+{% endmacro %}
+
+{% macro string(name, type) %}
+<fieldset class="form-group">
+	<label for="{{name}}Schema">{{name}}</label>
+	<input type="text" class="form-control" id="{{name}}Schema" placeholder="{{name}}">
+	<small class="text-muted">We'll never share your email with anyone else.</small>
+</fieldset>
+{% endmacro %}
+
+{% macro boolean(name, type) %}
+<fieldset class="form-group">
+	<label for="{{name}}Schema">{{name}}</label>
+	<input type="text" class="form-control" id="{{name}}Schema" placeholder="{{name}}">
+	<small class="text-muted">We'll never share your email with anyone else.</small>
+</fieldset>
+{% endmacro %}

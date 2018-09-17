@@ -1,0 +1,15 @@
+<div class="jumbotron jumbotron-fluid" style="background:url({{src(header.bg(), 'preview')}}) center center no-repeat; background-size: cover;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 ml-auto ">
+				{{img(header.img(), 'logo')|raw}}
+			</div>
+			<div class="col-md-6 mr-auto">
+				<h1>{{header.get('title')}}</h1>
+				<h2>{{header.get('subtitle')}}</h2>
+				<br>
+				<a class="{{header.get('btn.class')}} btn-lg" href="{{header.get('btn.href')}}">{{header.get('btn.title')}}</a>
+			</div>
+		</div>
+	</div>
+</div>
